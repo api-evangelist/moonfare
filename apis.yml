@@ -1,7 +1,27 @@
 aid: moonfare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/moonfare.png
 name: Moonfare
-description: Moonfare is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Moonfare is a digital investment platform that gives individual professional
+  and high-net-worth investors access to private equity and venture capital funds
+  that were historically reserved for institutions. The platform pools investor commitments
+  into Luxembourg-based feeder funds, applies rigorous due diligence (approving only
+  a small fraction of screened funds), and offers products spanning direct fund investments,
+  portfolio-of-funds, co-investments, secondaries, and open-ended funds, with a digital
+  secondary market for institutional-style liquidity. Moonfare handles capital calls,
+  distributions, reporting, and administration through a technology-enabled onboarding
+  and portfolio experience. Moonfare does not currently publish a public developer
+  API or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/moonfare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Private Equity
+- Venture Capital
+- Fintech
+- Investing
+- Wealth Management
+- Alternative Investments
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.moonfare.com/
+- type: Blog
+  url: https://www.moonfare.com/blog
+- type: Support
+  url: https://www.moonfare.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.moonfare.com/privacy-policy
+- type: TermsOfService
+  url: https://www.moonfare.com/terms
+- type: Security
+  url: https://www.moonfare.com/security
+- type: Compliance
+  url: https://www.moonfare.com/security
+- type: DomainSecurity
+  url: security/moonfare-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/moonfare-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/moonfare-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
