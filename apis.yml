@@ -51,7 +51,7 @@ tags:
 - Investing
 - Wealth Management
 - Alternative Investments
-- Financial-Services
+- Financial Services
 tags_raw:
 - Company
 - Private Equity
@@ -61,6 +61,7 @@ tags_raw:
 - Wealth Management
 - Alternative Investments
 - Financial Services
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
