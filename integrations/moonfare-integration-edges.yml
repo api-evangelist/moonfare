@@ -30,6 +30,40 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-asset-management.py
   first_seen: '2026-10-18'
+- partner_name: BaFin company database (supervised institutions, Germany)
+  partner: null
+  partner_match: register-name
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://portal.mvp.bafin.de/database/InstInfo/
+  category: German financial supervisory licence (BaFin)
+  contract_reference:
+    register: BaFin company database (supervised institutions, Germany)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: Moonfare Financial Services GmbH
+      licences:
+      - Wertpapierinstitut
+      register_country: DE
+      matched_domain: null
+      matched_by: register-name
+      register_id: BaFin-ID 10163556
+      lei: 529900XVOST90KV72355
+      register_name_note: register-name 'moonfare' = moonfare; no wikidata P856
+    signal_note: 'participation only: a supervisory licence / authorisation; no API conformance is published by
+      this register'
+    detected_by: sweep-dach-financial-registers.py
+    detected: '2026-10-21'
+    matched_by: register-name
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-dach-financial-registers.py
+  first_seen: '2026-10-21'
 generated: '2026-10-18'
 method: searched
 source:
@@ -38,3 +72,6 @@ source:
 checked:
 - https://reports.adviserinfo.sec.gov/reports/CompilationReports/IA_FIRM_SEC_Feed_10_17_2026.xml.gz
 - https://www.wealthbox.com/wp-json/wp/v2/integrations?per_page=100&page=1
+- https://portal.mvp.bafin.de/database/InstInfo/
+- https://www.dnb.nl/en/public-register/
+- https://www.finma.ch/en/finma-public/authorised-institutions-individuals-and-products/
